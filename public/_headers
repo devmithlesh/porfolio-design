@@ -1,0 +1,6 @@
+# Force correct MIME types so module scripts are never served as
+# application/octet-stream (which makes the browser refuse to execute them).
+/assets/*.js
+  Content-Type: text/javascript; charset=utf-8
+/assets/*.css
+  Content-Type: text/css; charset=utf-8

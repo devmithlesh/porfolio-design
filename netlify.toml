@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback. Netlify serves existing static files (your hashed JS/CSS in
+# /assets) BEFORE applying this rule, so it never rewrites real asset requests.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

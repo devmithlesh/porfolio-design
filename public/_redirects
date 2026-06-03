@@ -1,0 +1,4 @@
+# Cloudflare Pages / Netlify SPA fallback.
+# Existing static files (hashed assets) are served first, so this only catches
+# unknown routes and never rewrites real /assets/*.js requests.
+/*    /index.html   200
